@@ -8,7 +8,7 @@ body {
   color: #d6d6ea;
 }
 
-.container-aplicativo {
+.main-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,7 +27,7 @@ button {
   align-items: center;
 }
 
-#informacoes-faixa {
+#book-informations {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,7 +36,7 @@ button {
 }
 
 
-#anterior, #proximo {
+#skip-backward, #skip-forward {
   font-size: 3rem;
 }
 
@@ -44,7 +44,7 @@ button {
   font-size: 4rem;
 }
 
-#container-botoes {
+#buttons-container {
   width: 100%;
   display: flex;
   justify-content: space-around;
