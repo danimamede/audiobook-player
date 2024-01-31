@@ -1,17 +1,28 @@
 body {
-  background-image: linear-gradient(#3b1566, #5f4da8);
+  background: linear-gradient(#C2D9EC, #D7E4BC);
   height: 100vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  color: #d6d6ea;
+  color: #753D1C;
 }
 
 .main-container {
   display: flex;
+  align-items: center;
+}
+
+.book-container {
+  display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.book-illustration {
+  position: fixed;
+  left: 7rem;
+  max-width: 100%;
 }
 
 button {
@@ -19,12 +30,6 @@ button {
   color: inherit;
   border: none;
   cursor: pointer;
-}
-
-.music-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 #book-informations {
@@ -48,4 +53,112 @@ button {
   width: 100%;
   display: flex;
   justify-content: space-around;
+}
+
+
+@media screen and (max-width: 1600px) {
+  .book-illustration {
+    width: 33%;
+    left: 1.25rem;
+  }
+
+  .book-cover {
+    width: 85%;
+  }
+
+  #book-informations {
+    font-size: 1.3rem;
+  }
+
+  #skip-backward, #skip-forward {
+    font-size: 2.75rem;
+  }
+
+  #play-pause {
+    font-size: 3.25rem;
+  }
+
+  #buttons-container {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .book-illustration {
+    width: 35%;
+    left: 1rem;
+  }
+
+  .book-cover {
+    width: 80%;
+  }
+
+  #book-informations {
+    font-size: 1.3rem;
+  }
+
+  #skip-backward, #skip-forward {
+    font-size: 2.5rem;
+  }
+
+  #play-pause {
+    font-size: 3rem;
+  }
+
+  #buttons-container {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .book-illustration {
+    width: 35%;
+    left: 0.5rem;
+  }
+
+  .book-cover {
+    width: 60%;
+  }
+
+  #book-informations {
+    font-size: 1.2rem;
+  }
+
+  #skip-backward, #skip-forward {
+    font-size: 2rem;
+  }
+
+  #play-pause {
+    font-size: 2.5rem;
+  }
+
+  #buttons-container {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .book-illustration {
+    display: none;
+  }
+
+  .book-cover {
+    width: 70%;
+  }
+
+  #book-informations {
+    font-size: 1.3rem;
+  }
+
+  #skip-backward, #skip-forward {
+    font-size: 2.5rem;
+  }
+
+  #play-pause {
+    font-size: 3rem;
+  }
+
+  #buttons-container {
+    width: 70%;
+  }
 }

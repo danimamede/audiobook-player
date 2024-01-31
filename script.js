@@ -37,7 +37,7 @@ function nextChapter() {
         currentChapter = currentChapter + 1;
     }
 
-    chapterAudio.src = './src/assets/books/dom-casmurro/' + currentChapter + '.mp3'
+    chapterAudio.src = './src/assets/books/winnie-the-pooh/' + currentChapter + '.mp3'
     playAudio();
     chapterChange();
     playing = 1;
@@ -50,7 +50,7 @@ function previousChapter() {
         currentChapter = currentChapter - 1;
     }
 
-    chapterAudio.src = './src/assets/books/dom-casmurro/' + currentChapter + '.mp3'
+    chapterAudio.src = './src/assets/books/winnie-the-pooh/' + currentChapter + '.mp3'
     playAudio();
     chapterChange();
     playing = 1;
